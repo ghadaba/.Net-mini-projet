@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="..\build\tp2_oolab.props" />
+</Project>

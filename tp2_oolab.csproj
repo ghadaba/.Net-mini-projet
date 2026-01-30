@@ -1,0 +1,40 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+	<PropertyGroup>
+		<!-- Version du framework cible : .NET 8 -->
+		<TargetFramework>net8.0</TargetFramework>
+		<Nullable>enable</Nullable>
+		<ImplicitUsings>enable</ImplicitUsings>
+	</PropertyGroup>
+
+	<ItemGroup>
+		<!-- EF Core Design (utile pour migrations et DbContext) -->
+		<PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="8.0.23" />
+		<!--
+      EF Core pour SQL Server :
+      Permet à ton application de se connecter et manipuler une base de données SQL Server
+      avec Entity Framework Core (ORM).
+    -->
+		<PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="8.0.11" />
+
+		<!--
+      Outils EF Core :
+      Contient les outils pour les migrations, la génération de code et les commandes
+      de la CLI (dotnet ef). 
+      IncludeAssets et PrivateAssets définissent quels éléments sont inclus dans la compilation et 
+      que le package n’est pas publié dans les projets qui consomment ton projet.
+    -->
+		<PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="8.0.23">
+			<IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+			<PrivateAssets>all</PrivateAssets>
+		</PackageReference>
+
+		<!--
+      Outils de scaffolding pour ASP.NET Core :
+      Permet de générer automatiquement des controllers, vues et Razor Pages à partir de modèles EF.
+      Nécessaire pour les commandes dotnet-aspnet-codegenerator.
+    -->
+		<PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Design" Version="8.0.23" />
+	</ItemGroup>
+
+</Project>
