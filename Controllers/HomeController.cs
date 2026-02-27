@@ -1,8 +1,8 @@
 using System.Diagnostics;
 using Microsoft.AspNetCore.Mvc;
-using tp2_oolab.Models;
+using MiniProjet.Models;
 
-namespace tp2_oolab.Controllers
+namespace MiniProjet.Controllers
 {
     public class HomeController : Controller
     {

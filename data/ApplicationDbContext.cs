@@ -1,8 +1,8 @@
 using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore;
-using tp2_oolab.Models;
+using MiniProjet.Models;
 
-namespace tp2_oolab.data
+namespace MiniProjet.data
 {
     public class ApplicationDbContext : IdentityDbContext<Microsoft.AspNetCore.Identity.IdentityUser>
     {
@@ -13,6 +13,6 @@ namespace tp2_oolab.data
 
         public DbSet<Article> Articles { get; set; }
         public DbSet<Category> Categories { get; set; }
-        public DbSet<tp2_oolab.Models.Customer> Customer { get; set; } = default!;
+        public DbSet<MiniProjet.Models.Customer> Customer { get; set; } = default!;
     }
 }

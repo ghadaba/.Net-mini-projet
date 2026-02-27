@@ -1,4 +1,4 @@
-namespace tp2_oolab.Models
+namespace MiniProjet.Models
 {
     public class Category
     {

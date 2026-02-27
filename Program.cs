@@ -1,6 +1,6 @@
 using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
-using tp2_oolab.data;
+using MiniProjet.data;
 
 var builder = WebApplication.CreateBuilder(args);
 

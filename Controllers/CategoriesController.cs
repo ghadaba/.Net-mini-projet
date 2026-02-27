@@ -1,9 +1,9 @@
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
-using tp2_oolab.data;
-using tp2_oolab.Models;
+using MiniProjet.Models;
+using MiniProjet.data;
 
-namespace tp2_oolab.Controllers
+namespace MiniProjet.Controllers
 {
     public class CategoriesController : Controller
     {
