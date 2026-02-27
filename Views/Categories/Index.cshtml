@@ -1,0 +1,44 @@
+@model IEnumerable<tp2_oolab.Models.Category>
+
+@{
+    ViewData["Title"] = "Catégories";
+}
+
+<h1>Catégories</h1>
+
+<p>
+    <a asp-action="Create" class="btn btn-primary">Nouvelle catégorie</a>
+</p>
+
+<form asp-action="Index" method="get" class="mb-3">
+    <div class="input-group">
+        <input type="text" name="search" value="@ViewData["Search"]" class="form-control" placeholder="Rechercher par nom..." />
+        <button type="submit" class="btn btn-outline-secondary">Rechercher</button>
+        @if (ViewData["Search"] != null)
+        {
+            <a asp-action="Index" class="btn btn-outline-secondary">Effacer</a>
+        }
+    </div>
+</form>
+
+<table class="table table-striped">
+    <thead>
+        <tr>
+            <th>@Html.DisplayNameFor(model => model.Name)</th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>@Html.DisplayFor(modelItem => item.Name)</td>
+                <td>
+                    <a asp-action="Edit" asp-route-id="@item.Id" class="btn btn-sm btn-outline-primary">Modifier</a>
+                    <a asp-action="Details" asp-route-id="@item.Id" class="btn btn-sm btn-outline-info">Détails</a>
+                    <a asp-action="Delete" asp-route-id="@item.Id" class="btn btn-sm btn-outline-danger">Supprimer</a>
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>
