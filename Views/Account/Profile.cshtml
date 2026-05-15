@@ -1,0 +1,49 @@
+@model MiniProjet.Models.ProfileViewModel
+@{
+    ViewData["Title"] = "Mon profil";
+}
+
+<h1>Mon profil</h1>
+
+<div class="card shadow-sm mt-3" style="max-width: 480px;">
+    <div class="card-body">
+        <dl class="row mb-0">
+            <dt class="col-sm-4">Identifiant</dt>
+            <dd class="col-sm-8">@Model.UserName</dd>
+
+            <dt class="col-sm-4">E-mail</dt>
+            <dd class="col-sm-8">@(Model.Email ?? "—")</dd>
+
+            <dt class="col-sm-4">Rôle(s)</dt>
+            <dd class="col-sm-8">
+                @foreach (var role in Model.Roles)
+                {
+                    if (role == RoleNames.Admin)
+                    {
+                        <span class="badge bg-danger">@role</span>
+                    }
+                    else
+                    {
+                        <span class="badge bg-secondary">@role</span>
+                    }
+                }
+            </dd>
+
+            <dt class="col-sm-4">Droits</dt>
+            <dd class="col-sm-8">
+                @if (Model.PeutModifier)
+                {
+                    <span class="text-success">CRUD complet (Admin)</span>
+                }
+                else
+                {
+                    <span class="text-muted">Lecture seule (User)</span>
+                }
+            </dd>
+        </dl>
+    </div>
+</div>
+
+<div class="mt-4">
+    <a asp-controller="Home" asp-action="Index" class="btn btn-secondary">Accueil</a>
+</div>

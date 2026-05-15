@@ -1,0 +1,38 @@
+@model MiniProjet.Models.Article
+
+@{
+    ViewData["Title"] = "Nouvel article";
+}
+
+<h1>Nouvel article</h1>
+
+<hr />
+<div class="row">
+    <div class="col-md-6">
+        <form asp-action="Create">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <div class="mb-3">
+                <label asp-for="Title" class="form-label"></label>
+                <input asp-for="Title" class="form-control" />
+                <span asp-validation-for="Title" class="text-danger"></span>
+            </div>
+            <div class="mb-3">
+                <label asp-for="Description" class="form-label"></label>
+                <textarea asp-for="Description" class="form-control" rows="4"></textarea>
+                <span asp-validation-for="Description" class="text-danger"></span>
+            </div>
+            <div class="mb-3">
+                <label asp-for="CategoryId" class="form-label">Catégorie</label>
+                <select asp-for="CategoryId" class="form-select" asp-items="ViewBag.CategoryId"></select>
+            </div>
+            <div class="mb-3">
+                <input type="submit" value="Créer" class="btn btn-primary" />
+                <a asp-action="Index" class="btn btn-secondary">Annuler</a>
+            </div>
+        </form>
+    </div>
+</div>
+
+@section Scripts {
+    @{ await Html.RenderPartialAsync("_ValidationScriptsPartial"); }
+}
