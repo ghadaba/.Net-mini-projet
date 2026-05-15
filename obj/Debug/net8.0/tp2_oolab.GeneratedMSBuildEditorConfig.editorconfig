@@ -15,61 +15,137 @@ build_property.EnforceExtendedAnalyzerRules =
 build_property.EnforceExtendedAnalyzerRules = 
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property._SupportedPlatformList = Linux,macOS,Windows
-build_property.RootNamespace = tp2_oolab
-build_property.RootNamespace = tp2_oolab
-build_property.ProjectDir = C:\Users\MSI\Downloads\dotnet\dotnet\corr\tp2_oolab\
+build_property.RootNamespace = MiniProjet
+build_property.RootNamespace = MiniProjet
+build_property.ProjectDir = C:\Users\ThinkPad E15\source\repos\Tp2-oolab\
 build_property.EnableComHosting = 
 build_property.EnableGeneratedComInterfaceComImportInterop = 
 build_property.RazorLangVersion = 8.0
 build_property.SupportLocalizedComponentNames = 
 build_property.GenerateRazorMetadataSourceChecksumAttributes = 
-build_property.MSBuildProjectDirectory = C:\Users\MSI\Downloads\dotnet\dotnet\corr\tp2_oolab
+build_property.MSBuildProjectDirectory = C:\Users\ThinkPad E15\source\repos\Tp2-oolab
 build_property._RazorSourceGeneratorDebug = 
 
-[C:/Users/MSI/Downloads/dotnet/dotnet/corr/tp2_oolab/Views/Customers/Create.cshtml]
+[C:/Users/ThinkPad E15/source/repos/Tp2-oolab/Views/Account/AccessDenied.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWNjb3VudFxBY2Nlc3NEZW5pZWQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/ThinkPad E15/source/repos/Tp2-oolab/Views/Account/Login.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWNjb3VudFxMb2dpbi5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/ThinkPad E15/source/repos/Tp2-oolab/Views/Account/Profile.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWNjb3VudFxQcm9maWxlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/ThinkPad E15/source/repos/Tp2-oolab/Views/Account/Register.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWNjb3VudFxSZWdpc3Rlci5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/ThinkPad E15/source/repos/Tp2-oolab/Views/Articles/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQXJ0aWNsZXNcQ3JlYXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/ThinkPad E15/source/repos/Tp2-oolab/Views/Articles/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQXJ0aWNsZXNcRGVsZXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/ThinkPad E15/source/repos/Tp2-oolab/Views/Articles/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQXJ0aWNsZXNcRGV0YWlscy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/ThinkPad E15/source/repos/Tp2-oolab/Views/Articles/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQXJ0aWNsZXNcRWRpdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/ThinkPad E15/source/repos/Tp2-oolab/Views/Articles/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQXJ0aWNsZXNcSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/ThinkPad E15/source/repos/Tp2-oolab/Views/Categories/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2F0ZWdvcmllc1xDcmVhdGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/ThinkPad E15/source/repos/Tp2-oolab/Views/Categories/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2F0ZWdvcmllc1xEZWxldGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/ThinkPad E15/source/repos/Tp2-oolab/Views/Categories/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2F0ZWdvcmllc1xEZXRhaWxzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/ThinkPad E15/source/repos/Tp2-oolab/Views/Categories/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2F0ZWdvcmllc1xFZGl0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/ThinkPad E15/source/repos/Tp2-oolab/Views/Categories/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2F0ZWdvcmllc1xJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/ThinkPad E15/source/repos/Tp2-oolab/Views/Customers/Create.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ3VzdG9tZXJzXENyZWF0ZS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/MSI/Downloads/dotnet/dotnet/corr/tp2_oolab/Views/Customers/Delete.cshtml]
+[C:/Users/ThinkPad E15/source/repos/Tp2-oolab/Views/Customers/Delete.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ3VzdG9tZXJzXERlbGV0ZS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/MSI/Downloads/dotnet/dotnet/corr/tp2_oolab/Views/Customers/Details.cshtml]
+[C:/Users/ThinkPad E15/source/repos/Tp2-oolab/Views/Customers/Details.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ3VzdG9tZXJzXERldGFpbHMuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/MSI/Downloads/dotnet/dotnet/corr/tp2_oolab/Views/Customers/Edit.cshtml]
+[C:/Users/ThinkPad E15/source/repos/Tp2-oolab/Views/Customers/Edit.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ3VzdG9tZXJzXEVkaXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/MSI/Downloads/dotnet/dotnet/corr/tp2_oolab/Views/Customers/Index.cshtml]
+[C:/Users/ThinkPad E15/source/repos/Tp2-oolab/Views/Customers/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ3VzdG9tZXJzXEluZGV4LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/MSI/Downloads/dotnet/dotnet/corr/tp2_oolab/Views/Home/Index.cshtml]
+[C:/Users/ThinkPad E15/source/repos/Tp2-oolab/Views/Genres/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcR2VucmVzXENyZWF0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/ThinkPad E15/source/repos/Tp2-oolab/Views/Genres/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcR2VucmVzXERlbGV0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/ThinkPad E15/source/repos/Tp2-oolab/Views/Genres/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcR2VucmVzXERldGFpbHMuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/ThinkPad E15/source/repos/Tp2-oolab/Views/Genres/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcR2VucmVzXEVkaXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/ThinkPad E15/source/repos/Tp2-oolab/Views/Genres/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcR2VucmVzXEluZGV4LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/ThinkPad E15/source/repos/Tp2-oolab/Views/Home/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/MSI/Downloads/dotnet/dotnet/corr/tp2_oolab/Views/Home/Privacy.cshtml]
+[C:/Users/ThinkPad E15/source/repos/Tp2-oolab/Views/Home/Privacy.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQcml2YWN5LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/MSI/Downloads/dotnet/dotnet/corr/tp2_oolab/Views/Shared/Error.cshtml]
+[C:/Users/ThinkPad E15/source/repos/Tp2-oolab/Views/Shared/Error.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEVycm9yLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/MSI/Downloads/dotnet/dotnet/corr/tp2_oolab/Views/Shared/_ValidationScriptsPartial.cshtml]
+[C:/Users/ThinkPad E15/source/repos/Tp2-oolab/Views/Shared/_ValidationScriptsPartial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/MSI/Downloads/dotnet/dotnet/corr/tp2_oolab/Views/_ViewImports.cshtml]
+[C:/Users/ThinkPad E15/source/repos/Tp2-oolab/Views/_ViewImports.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/MSI/Downloads/dotnet/dotnet/corr/tp2_oolab/Views/_ViewStart.cshtml]
+[C:/Users/ThinkPad E15/source/repos/Tp2-oolab/Views/_ViewStart.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/MSI/Downloads/dotnet/dotnet/corr/tp2_oolab/Views/Shared/_Layout.cshtml]
+[C:/Users/ThinkPad E15/source/repos/Tp2-oolab/Views/Shared/_Layout.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
-build_metadata.AdditionalFiles.CssScope = b-3dc24ny795
+build_metadata.AdditionalFiles.CssScope = b-tydwo1y1x4

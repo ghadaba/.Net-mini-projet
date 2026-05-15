@@ -1,10 +1,13 @@
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
+using MiniProjet.Constants;
 using MiniProjet.Models;
 using MiniProjet.data;
 
 namespace MiniProjet.Controllers
 {
+    [Authorize]
     public class CategoriesController : Controller
     {
         private readonly ApplicationDbContext _context;
@@ -40,6 +43,7 @@ namespace MiniProjet.Controllers
         }
 
         // GET: Categories/Create
+        [Authorize(Roles = RoleNames.Admin)]
         public IActionResult Create()
         {
             return View();
@@ -47,6 +51,7 @@ namespace MiniProjet.Controllers
 
         [HttpPost]
         [ValidateAntiForgeryToken]
+        [Authorize(Roles = RoleNames.Admin)]
         public async Task<IActionResult> Create([Bind("Id,Name")] Category category)
         {
             if (ModelState.IsValid)
@@ -60,6 +65,7 @@ namespace MiniProjet.Controllers
         }
 
         // GET: Categories/Edit/5
+        [Authorize(Roles = RoleNames.Admin)]
         public async Task<IActionResult> Edit(Guid? id)
         {
             if (id == null) return NotFound();
@@ -72,6 +78,7 @@ namespace MiniProjet.Controllers
 
         [HttpPost]
         [ValidateAntiForgeryToken]
+        [Authorize(Roles = RoleNames.Admin)]
         public async Task<IActionResult> Edit(Guid id, [Bind("Id,Name")] Category category)
         {
             if (id != category.Id) return NotFound();
@@ -94,6 +101,7 @@ namespace MiniProjet.Controllers
         }
 
         // GET: Categories/Delete/5
+        [Authorize(Roles = RoleNames.Admin)]
         public async Task<IActionResult> Delete(Guid? id)
         {
             if (id == null) return NotFound();
@@ -107,6 +115,7 @@ namespace MiniProjet.Controllers
 
         [HttpPost, ActionName("Delete")]
         [ValidateAntiForgeryToken]
+        [Authorize(Roles = RoleNames.Admin)]
         public async Task<IActionResult> DeleteConfirmed(Guid id)
         {
             var category = await _context.Categories.FindAsync(id);

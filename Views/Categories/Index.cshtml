@@ -6,9 +6,12 @@
 
 <h1>Catégories</h1>
 
-<p>
-    <a asp-action="Create" class="btn btn-primary">Nouvelle catégorie</a>
-</p>
+@if (User.IsInRole(RoleNames.Admin))
+{
+    <p>
+        <a asp-action="Create" class="btn btn-primary">Nouvelle catégorie</a>
+    </p>
+}
 
 <form asp-action="Index" method="get" class="mb-3">
     <div class="input-group">
@@ -34,9 +37,12 @@
             <tr>
                 <td>@Html.DisplayFor(modelItem => item.Name)</td>
                 <td>
-                    <a asp-action="Edit" asp-route-id="@item.Id" class="btn btn-sm btn-outline-primary">Modifier</a>
                     <a asp-action="Details" asp-route-id="@item.Id" class="btn btn-sm btn-outline-info">Détails</a>
-                    <a asp-action="Delete" asp-route-id="@item.Id" class="btn btn-sm btn-outline-danger">Supprimer</a>
+                    @if (User.IsInRole(RoleNames.Admin))
+                    {
+                        <a asp-action="Edit" asp-route-id="@item.Id" class="btn btn-sm btn-outline-primary">Modifier</a>
+                        <a asp-action="Delete" asp-route-id="@item.Id" class="btn btn-sm btn-outline-danger">Supprimer</a>
+                    }
                 </td>
             </tr>
         }

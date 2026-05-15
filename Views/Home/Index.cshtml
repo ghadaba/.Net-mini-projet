@@ -1,8 +1,106 @@
-﻿@{
-    ViewData["Title"] = "Home Page";
+﻿@model MiniProjet.Models.HomeDashboardViewModel
+@{
+    ViewData["Title"] = "Tableau de bord";
 }
 
-<div class="text-center">
-    <h1 class="display-4">Welcome</h1>
-    <p>Learn about <a href="https://learn.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
+<h1 class="mb-4">Tableau de bord</h1>
+
+@if (Model.EstConnecte)
+{
+    <div class="alert alert-info">
+        Bonjour <strong>@Model.NomUtilisateur</strong>
+        @if (!string.IsNullOrEmpty(Model.RolePrincipal))
+        {
+            <span>— rôle : <strong>@Model.RolePrincipal</strong></span>
+        }
+        <a asp-controller="Account" asp-action="Profile" class="alert-link ms-2">Voir mon profil</a>
+    </div>
+}
+else
+{
+    <div class="alert alert-warning">
+        Connectez-vous pour accéder aux articles et catégories.
+        <a asp-controller="Account" asp-action="Login" class="alert-link">Connexion</a>
+        ou
+        <a asp-controller="Account" asp-action="Register" class="alert-link">inscription</a>.
+    </div>
+}
+
+<div class="row g-3 mb-4">
+    <div class="col-md-6">
+        <div class="card text-center border-primary">
+            <div class="card-body">
+                <h2 class="display-6 text-primary">@Model.TotalArticles</h2>
+                <p class="card-text mb-0">Articles</p>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-6">
+        <div class="card text-center border-success">
+            <div class="card-body">
+                <h2 class="display-6 text-success">@Model.TotalCategories</h2>
+                <p class="card-text mb-0">Catégories</p>
+            </div>
+        </div>
+    </div>
 </div>
+
+<div class="row g-4">
+    <div class="col-lg-6">
+        <h3>Articles par catégorie</h3>
+        @if (Model.ArticlesParCategorie.Any())
+        {
+            <table class="table table-sm table-striped">
+                <thead>
+                    <tr><th>Catégorie</th><th>Nombre</th></tr>
+                </thead>
+                <tbody>
+                    @foreach (var stat in Model.ArticlesParCategorie)
+                    {
+                        <tr>
+                            <td>@stat.NomCategorie</td>
+                            <td>@stat.NombreArticles</td>
+                        </tr>
+                    }
+                </tbody>
+            </table>
+        }
+        else
+        {
+            <p class="text-muted">Aucune catégorie pour le moment.</p>
+        }
+    </div>
+    <div class="col-lg-6">
+        <h3>5 derniers articles</h3>
+        @if (Model.DerniersArticles.Any())
+        {
+            <ul class="list-group">
+                @foreach (var article in Model.DerniersArticles)
+                {
+                    <li class="list-group-item d-flex justify-content-between align-items-center">
+                        <span>
+                            <strong>@article.Title</strong>
+                            <small class="text-muted d-block">@(article.Category?.Name ?? "—") · @article.DateCreated.ToString("dd/MM/yyyy")</small>
+                        </span>
+                        @if (Model.EstConnecte)
+                        {
+                            <a asp-controller="Articles" asp-action="Details" asp-route-id="@article.Id" class="btn btn-sm btn-outline-primary">Voir</a>
+                        }
+                    </li>
+                }
+            </ul>
+        }
+        else
+        {
+            <p class="text-muted">Aucun article pour le moment.</p>
+        }
+    </div>
+</div>
+
+@if (Model.EstConnecte)
+{
+    <div class="mt-4">
+        <a asp-controller="Articles" asp-action="Index" class="btn btn-primary me-2">Tous les articles</a>
+        <a asp-controller="Categories" asp-action="Index" class="btn btn-secondary">Toutes les catégories</a>
+    </div>
+}

@@ -20,7 +20,7 @@
                 <div class="navbar-collapse collapse d-sm-inline-flex justify-content-between">
                     <ul class="navbar-nav flex-grow-1">
                         <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Index">Home</a>
+                            <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Index">Accueil</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link text-dark" asp-area="" asp-controller="Articles" asp-action="Index">Articles</a>
@@ -36,7 +36,20 @@
                         @if (User.Identity?.IsAuthenticated == true)
                         {
                             <li class="nav-item">
-                                <span class="nav-link text-dark">@User.Identity.Name</span>
+                                <a class="nav-link text-dark" asp-controller="Account" asp-action="Profile">Mon profil</a>
+                            </li>
+                            <li class="nav-item">
+                                <span class="nav-link text-dark">
+                                    @User.Identity.Name
+                                    @if (User.IsInRole(RoleNames.Admin))
+                                    {
+                                        <span class="badge bg-danger ms-1">Admin</span>
+                                    }
+                                    else if (User.IsInRole(RoleNames.User))
+                                    {
+                                        <span class="badge bg-secondary ms-1">User</span>
+                                    }
+                                </span>
                             </li>
                             <li class="nav-item">
                                 <form asp-controller="Account" asp-action="Logout" method="post" class="d-inline">

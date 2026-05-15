@@ -1,23 +1,23 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\MSI\\Downloads\\dotnet\\dotnet\\corr\\tp2_oolab\\tp2_oolab.csproj": {}
+    "C:\\Users\\ThinkPad E15\\source\\repos\\Tp2-oolab\\tp2_oolab.csproj": {}
   },
   "projects": {
-    "C:\\Users\\MSI\\Downloads\\dotnet\\dotnet\\corr\\tp2_oolab\\tp2_oolab.csproj": {
+    "C:\\Users\\ThinkPad E15\\source\\repos\\Tp2-oolab\\tp2_oolab.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\MSI\\Downloads\\dotnet\\dotnet\\corr\\tp2_oolab\\tp2_oolab.csproj",
-        "projectName": "tp2_oolab",
-        "projectPath": "C:\\Users\\MSI\\Downloads\\dotnet\\dotnet\\corr\\tp2_oolab\\tp2_oolab.csproj",
-        "packagesPath": "C:\\Users\\MSI\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\MSI\\Downloads\\dotnet\\dotnet\\corr\\tp2_oolab\\obj\\",
+        "projectUniqueName": "C:\\Users\\ThinkPad E15\\source\\repos\\Tp2-oolab\\tp2_oolab.csproj",
+        "projectName": "MiniProjet",
+        "projectPath": "C:\\Users\\ThinkPad E15\\source\\repos\\Tp2-oolab\\tp2_oolab.csproj",
+        "packagesPath": "C:\\Users\\ThinkPad E15\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\ThinkPad E15\\source\\repos\\Tp2-oolab\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\MSI\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\ThinkPad E15\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -26,7 +26,6 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -50,6 +49,10 @@
         "net8.0": {
           "targetAlias": "net8.0",
           "dependencies": {
+            "Microsoft.AspNetCore.Identity.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[8.0.11, )"
+            },
             "Microsoft.EntityFrameworkCore.Design": {
               "target": "Package",
               "version": "[8.0.23, )"
